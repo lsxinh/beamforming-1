@@ -6,9 +6,9 @@
 %           -window   : -'rect' or 'hanning'. Default is Hanning window
 %           -aperture : -'LF' for 415 and 'HF' for 950 aperture. Case-insensitive
 %		-steer_angle: sin theta 
-%OUTPUT     -final_sum: - Mx401, 401 beamformed results corresponding to 401 bearing angles equally spaced in sin(theta) from -1 to 1
+%OUTPUT     -final_sum: - MxnoBeams beamformed results corresponding to noBeams bearing angles equally spaced in sin(theta) from -1 to 1
 %                           
-% let there be only 
+
 
 function final_sum = steer_sperm_whale(signal_ft, window1, fs, noBeams, noHydrophones, sensor_positions, c, steer_angle)
 
